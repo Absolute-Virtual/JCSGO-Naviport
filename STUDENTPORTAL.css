@@ -630,7 +630,7 @@ input::focus {
 
 .frontpagewelcome {
     text-align: center;
-    background-image: url(HOMEPAGEIMAGE.PNG);
+    background-image: url(https://www.mindgroom.in//admin/assets/Blogs_Images/Blogs_Image_11.png);
     background-position: center;
     width: 100%;
     margin-top: 75px;
@@ -762,5 +762,6 @@ footer a:hover {
     border-bottom: 4px solid #020E4C;
     padding: 10px;
 }
+
 
 
