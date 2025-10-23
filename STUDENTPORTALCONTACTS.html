@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Contacts | Naviport</title>
+	<link rel="stylesheet" type="text/css" href="STUDENTPORTAL.css">
+</head>
+<script src="STUDENTPORTAL.js"></script>
+<body style="padding-top: 100px;">
+
+	<header>
+		<nav>
+			<a href="STUDENTPORTALLOGIN.html" class="hasnot" id="login" style="margin: 10px;">Log In</a>
+			<a href="STUDENTPORTALSIGNUP.html" class="hasnot" id="signup" style="margin: 10px 750px 10px 10px;">Sign Up</a>
+		</nav>
+		<nav>
+			<a href="STUDENTPORTAL.html" class="categ" id="home">HOME</a>
+			<a href="STUDENTPORTALCONTACTS.html" class="categ" id="contacts">CONTACTS</a>
+			<a href="STUDENTPORTALABOUTUS.html" class="categ" id="aboutus">ABOUT US</a>
+		</nav>
+
+	</header>
+
+	<main class="maincontacts-container">
+		<h1>Get in touch with us</h1>
+		<p>Get in touch by giving us a call, or using our contact form below.</p>
+	</main>
+
+	<main style="margin-left: 20px; margin-bottom: 100px; display: flex; float: left; align-items: center; min-height: 40vh;">
+		<div class="photo-container">
+		</div>
+	</main>
+
+	<main style="margin-right: 20px; margin-bottom: 100px; display: flex; float: right; align-items: center; min-height: 40vh;">
+		<div class="contacts-container">
+			<p> SEND US A MESSAGE </p>
+			<form action="#" method="POST">
+			
+			    <input type="text" id="feedback" name="feedback" required placeholder="How can we help you?">
+		   
+			    <div class="fname-lname-contacts-container">
+
+				    <input type="text" id="fnamereq" name="fnamereq" required placeholder="First Name">
+				    <input type="text" id="lnamereq" name="lnamereq" required placeholder="Last Name">
+
+			    </div>
+
+			    <input style="margin-top: 40px;" type="email" id="email" name="email" required placeholder="Email">
+			    <input style="margin-top: 40px;" type="number" id="phone" name="phone" required placeholder="Phone">
+
+			    <div class="message-container">
+
+			        <textarea style="margin-top: 60px;" class="message-function" type="text" id="message" name="message" required placeholder="Message"></textarea>
+			    </div>
+			    <center>
+			        <button style="margin-top: 30px;" class="messagebutton" type="submit">SEND MESSAGE</button>
+		        </center>
+		    </form>
+		</div>
+    </main>
+    <footer style="margin-top: 1000px;">
+        <p>© TVL-ICT Students</p>
+        <p><a href="STUDENTPORTALPRIVACYPOLICY.html"> Privacy Policy </a> |  <a href="STUDENTPORTALCONTACTS.html"> Send Feedback </a></p>
+    </footer>
+</body>
+</html>

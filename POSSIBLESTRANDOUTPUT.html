@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Possible Careers | Student Portal</title>
+<link rel="stylesheet" type="text/css" href="STUDENTPORTAL.css">
+
+<style>
+body {
+  font-family: Arial, sans-serif;
+  background-color: #020E4C;
+  color: white;
+  margin: 0;
+  padding: 0;
+  background-image: url(BACKGROUND.PNG);
+  background-size: cover;
+  background-position: center;
+}
+
+main {
+  padding-top: 120px;
+  padding-bottom: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px;
+}
+
+h1.page-title {
+  color: #FFB11A;
+  font-size: 80px;
+  font-family: Romanica, serif;
+  margin-bottom: 40px;
+  border-bottom: 3px solid #FFB11A;
+  animation: peekaboo 1.5s;
+}
+
+.strand-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 25px;
+  width: 90%;
+  max-width: 1200px;
+}
+
+.strand-box {
+  background-color: #0f2b73;
+  border-radius: 15px;
+  border: 3px solid #FFB11A;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.4);
+  padding: 25px;
+  height: auto;
+  width: 1200px;
+  cursor: pointer;
+  margin: 15px;
+}
+
+.strand-title-container:hover {
+  transform: scale(1.01);
+  box-shadow: 0 0 20px #3446eb;
+}
+
+.strand-title {
+  font-size: 28px;
+  font-weight: bold;
+  color: #FFB11A;
+  margin-bottom: 10px;
+}
+
+.strand-title-container {
+  transition: transform 0.3s, box-shadow 0.3s;
+  background-color: #3446eb;
+  padding: 20px;
+  margin-bottom: 40px;
+  border-radius: 12px;
+}
+
+.strand-meaning {
+  font-size: 20px;
+  margin-bottom: 20px;
+  color: #FFB11A;
+  font-weight: bolder;
+  border-left: 4px solid #FFB11A;
+  padding-left: 10px;
+}
+
+.career-list {
+  display: none;
+  flex-direction: column;
+  gap: 15px;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.career-list.active {
+  display: flex;
+  opacity: 1;
+}
+
+.career-item {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  background-color: #e3e3e3;
+  color: #020E4C;
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.2);
+  animation: peekaboo-shotup 1.3s;
+}
+
+.career-item img {
+  width: 80px;
+  height: 80px;
+  border-radius: 10px;
+  object-fit: cover;
+  border: 2px solid #FFB11A;
+}
+
+.career-item p {
+  margin: 0;
+  font-size: 17.5px;
+}
+
+@keyframes fadeIn {
+  from {opacity: 0; transform: translateY(-5px);}
+  to {opacity: 1; transform: translateY(0);}
+}
+
+@keyframes peekaboo {
+  0% {opacity: 0; transform: translateY(-10px);}
+  100% {opacity: 1;}
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <nav>
+    <a href="STUDENTPORTALLOGIN.html" class="hasnot" style="margin: 10px;">Log In</a>
+    <a href="STUDENTPORTALSIGNUP.html" class="hasnot" style="margin: 10px 750px 10px 10px;">Sign Up</a>
+  </nav>
+  <nav>
+    <a href="STUDENTPORTAL.html" class="categ">HOME</a>
+    <a href="#" class="categ">CONTACTS</a>
+    <a href="#" class="categ">ABOUT US</a>
+  </nav>
+</header>
+
+<main>
+  <h1 class="page-title">Possible Careers (per Strand)</h1>
+
+  <div class="strand-box">
+    <div class="strand-title-container">
+  <div class="strand-title">STEM</div>
+  <div class="strand-meaning">Science, Technology, Engineering, and Mathematics</div>
+</div>
+  <div class="career-list">
+    <div class="career-item">
+      <img src="NG.png" alt="Engineer">
+      <p>Engineer - An engineer solves real-world problems by designing, building, and improving systems, structures, or technologies using math, science, and creativity.</p>
+    </div>
+    <div class="career-item" style="animation-delay: 0.04s;">
+      <img src="DOC.jpg" alt="Doctor">
+      <p>Doctor - A doctor diagnoses and treats illnesses, promotes health, and cares for patients to improve their physical and emotional well-being.</p>
+    </div>
+    <div class="career-item" style="animation-delay: 0.08s;">
+      <img src="arc.png" alt="Architect">
+      <p>Architect - An architect designs buildings and spaces by blending creativity, engineering, and functionality to shape environments that inspire and serve people.</p>
+    </div>
+    <div class="career-item"style="animation-delay: 0.12s;">
+      <img src="cem.jpg" alt="Chemist">
+      <p>Chemist - A chemist explores the properties and reactions of substances to develop new materials, medicines, and solutions that improve everyday life.</p>
+    </div>
+    <div class="career-item" style="animation-delay: 0.16s;">
+      <img src="dat.jpg" alt="Data Analyst">
+      <p>Data Analyst - A data analyst transforms raw data into meaningful insights by collecting, cleaning, and interpreting information to support smart business decisions.</p>
+    </div>
+    <div class="career-item" style="animation-delay: 0.20s;">
+      <img src="lot.jpg" alt="Pilot">
+      <p>Pilot - A pilot operates aircraft to transport passengers or cargo, navigating safely through airspace and weather conditions.</p>
+    </div>
+    <div class="career-item" style="animation-delay: 0.24s;">
+      <img src="bio.jpg" alt="Biologist">
+      <p>Biologist - A biologist studies living organisms and their environments to understand how life functions, evolves, and interacts with the world.</p>
+    </div>
+    <div class="career-item" style="animation-delay: 0.28s;">
+      <img src="stat.jpg" alt="Statistician">
+      <p>Statistician - A statistician collects, analyzes, and interprets data to uncover patterns, support decision-making, and solve real-world problems in fields like health, economics, and social science.</p>
+    </div>
+  </div>
+</div>
+
+
+ <div class="strand-box">
+  <div class="strand-title-container">
+  <div class="strand-title">ABM</div>
+  <div class="strand-meaning">Accountancy, Business, and Management</div>
+  </div>
+  <div class="career-list">
+    <div class="career-item">
+      <img src="tant.jpg" alt="Accountant">
+      <p>Accountant - An accountant manages financial records, analyzes budgets, and ensures accuracy in reporting to help individuals or organizations make sound financial decisions.</p>
+    </div>
+    <div class="career-item" style="animation-delay: 0.04s;">
+      <img src="man.jpg" alt="Business Manager">
+      <p>Business Manager - A business manager oversees operations, leads teams, and makes strategic decisions to ensure a company runs efficiently and meets its goals.</p>
+    </div>
+    <div class="career-item" style="animation-delay: 0.08s;">
+      <img src="bus.jpg" alt="Entrepreneur">
+      <p>Entrepreneur - An entrepreneur creates and builds businesses by identifying opportunities, taking risks, and turning ideas into profitable ventures.</p>
+    </div>
+    <div class="career-item" style="animation-delay: 0.12s;">
+      <img src="market.jpg" alt="Marketing Officer">
+      <p>Marketing Officer - A marketing officer promotes a company’s products or services by creating campaigns, analyzing market trends, and engaging customers to boost brand awareness and sales.</p>
+    </div>
+    <div class="career-item" style="animation-delay: 0.16s;">
+      <img src="HR.jpg" alt="HR Specialist">
+      <p>HR Specialist - An HR (Human Resources) specialist supports a company by managing employee relations, recruitment, training, and benefits to ensure a healthy and productive workplace.</p>
+    </div>
+    <div class="career-item" style="animation-delay: 0.20s;">
+      <img src="fin.jpg" alt="Financial Analyst">
+      <p>Financial Analyst - A financial analyst evaluates economic data, market trends, and company performance to guide investment decisions and financial planning.</p>
+    </div>
+    <div class="career-item" style="animation-delay: 0.24s;">
+      <img src="sales.jpg" alt="Sales Executive">
+      <p>Sales Executive - A sales executive drives business growth by identifying customer needs, promoting products or services, and closing deals to boost revenue.</p>
+    </div>
+    <div class="career-item" style="animation-delay: 0.28s;">
+      <img src="eco.jpg" alt="Economist">
+      <p>Economist - An economist studies how resources are produced, distributed, and consumed to understand markets and guide decision-making.</p>
+    </div>
+  </div>
+</div>
+
+
+ 
+
+<div class="strand-box">
+  <div class="strand-title-container">
+  <div class="strand-title">HUMSS</div>
+  <div class="strand-meaning">Humanities and Social Sciences</div>
+  </div>
+  <div class="career-list">
+    <div class="career-item">
+      <img src="guide.webp" alt="Guidance Counselor">
+      <p>Guidance Counselor - A guidance counselor supports students in their academic, personal, and career growth through advice, encouragement, and planning.</p>
+    </div>
+    <div class="career-item" style="animation-delay: 0.04s;">
+      <img src="law.jpg" alt="Lawyer">
+      <p>Lawyer - A lawyer provides legal advice, prepares documents, and represents clients in court to uphold justice and protect rights.</p>
+    </div>
+    <div class="career-item" style="animation-delay: 0.08s;">
+      <img src="syc.jpg" alt="Psychologist">
+      <p>Psychologist - A psychologist studies mental processes and behavior to help people understand and improve their emotional well-being.</p>
+    </div>
+    <div class="career-item" style="animation-delay: 0.12s;">
+      <img src="jour.jpg" alt="Journalist">
+      <p>Journalist - A journalist gathers, investigates, and reports news to inform the public through writing, video, or broadcast.</p>
+    </div>
+    <div class="career-item" style="animation-delay: 0.16s;">
+      <img src="teach.jpg" alt="Teacher">
+      <p>Teacher - A teacher educates, guides, and inspires students by sharing knowledge and fostering learning in the classroom.</p>
+    </div>
+    <div class="career-item" style="animation-delay: 0.20s;">
+      <img src="crim.jpg" alt="Criminologist">
+      <p>Criminologist - A criminologist studies crime, its causes, and effects to help improve law enforcement and criminal justice systems.</p>
+    </div>
+    <div class="career-item" style="animation-delay: 0.24s;">
+      <img src="ant.png" alt="Anthropologist">
+      <p>Anthropologist - An anthropologist studies humans, cultures, and societies—past and present—to understand how people live and relate to one another.</p>
+    </div>
+    <div class="career-item" style="animation-delay: 0.28s;">
+      <img src="public.jpg" alt="Public Relations Officer">
+      <p>Public Relations Officer - A public relations officer manages a company’s image by communicating with the public and media to build trust and maintain a positive reputation.</p>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="strand-box">
+  <div class="strand-title-container">
+  <div class="strand-title">GAS</div>
+  <div class="strand-meaning">General Academic Strand</div>
+  </div>
+  <div class="career-list">
+    <div class="career-item">
+      <img src="teach.jpg" alt="Teacher">
+      <p>Teacher - A teacher educates, guides, and inspires students by sharing knowledge and fostering learning in the classroom.</p>
+    </div>
+    <div class="career-item"style="animation-delay: 0.04s;">
+      <img src="jour.jpg" alt="Journalist">
+      <p>Journalist - A journalist investigates, writes, and reports news stories to inform the public through print, broadcast, or digital media.</p>
+    </div>
+    <div class="career-item" style="animation-delay: 0.08s;">
+      <img src="police.jpg" alt="Police Officer">
+      <p>Police Officer - A police officer enforces laws, protects the public, and maintains peace and safety in the community.</p>
+    </div>
+    <div class="career-item" style="animation-delay: 0.12s;">
+      <img src="work.jpg" alt="Social Worker">
+      <p>Social Worker - A social worker helps people overcome challenges by providing support, resources, and advocacy for their well-being.</p>
+    </div>
+    <div class="career-item" style="animation-delay: 0.16s;">
+      <img src="law.jpg" alt="Lawyer">
+      <p>Lawyer - A lawyer advises clients on legal matters and represents them in court to uphold justice and protect rights.</p>
+    </div>
+    <div class="career-item" style="animation-delay: 0.20s;">
+      <img src="syc.jpg" alt="Psychologist">
+      <p>Psychologist - A psychologist studies mental processes and behavior to help people understand and improve their emotional well-being.</p>
+    </div>
+    <div class="career-item" style="animation-delay: 0.24s;">
+      <img src="plan.png" alt="Event Planner">
+      <p>Event Planner - An event planner organizes and coordinates events like weddings, parties, or conferences to ensure they run smoothly.</p>
+    </div>
+    <div class="career-item" style="animation-delay: 0.28s;">
+      <img src="pub.jpg" alt="Public Servant">
+      <p>Public Servant - A public servant works in government to serve the community by delivering public services and upholding the law.</p>
+    </div>
+  </div>
+</div>
+
+
+
+
+<div class="strand-box">
+  <div class="strand-title-container">
+  <div class="strand-title">TVL</div>
+  <div class="strand-meaning">Technical-Vocational-Livelihood</div>
+  </div>
+  <div class="career-list">
+    <div class="career-item">
+      <img src="cap.png" alt="Video Editor">
+      <p>Video Editor - A video editor cuts, arranges, and enhances video clips to create polished and engaging visual stories.</p>
+    </div>
+    <div class="career-item" style="animation-delay: 0.04s;">
+      <img src="web.jpg" alt="Web Developer">
+      <p>Web Developer - A web developer builds and maintains websites using coding languages to ensure functionality, design, and user experience.</p>
+    </div>
+    <div class="career-item" style="animation-delay: 0.08s;">
+      <img src="gra.jpg" alt="Graphic Designer">
+      <p>Graphic Designer - A graphic designer creates visual content to communicate ideas through images, typography, and layout.</p>
+    </div>
+    <div class="career-item" style="animation-delay: 0.12s;">
+      <img src="tech.jpg" alt="Computer Technician">
+      <p>Computer Technician - A computer technician installs, maintains, and repairs computer hardware and software to keep systems running smoothly.</p>
+    </div>
+    <div class="career-item" style="animation-delay: 0.16s;">
+      <img src="cyber.jpeg" alt="Cybersecurity Analyst">
+      <p>Cybersecurity Analyst - A cybersecurity analyst protects computer systems and networks from digital threats like hacking and malware.</p>
+    </div>
+    <div class="career-item" style="animation-delay: 0.20s;">
+      <img src="ani.jpg" alt="Animator">
+      <p>Animator - An animator creates moving images or characters for films, games, or digital media using art and motion.</p>
+    </div>
+    <div class="career-item" style="animation-delay: 0.24s;">
+      <img src="dig.jpg" alt="Digital Marketer">
+      <p>Digital Marketer - A digital marketer promotes products or services online using tools like social media, SEO, and ads.</p>
+    </div>
+    <div class="career-item" style="animation-delay: 0.28s;">
+      <img src="asis.jpg" alt="Virtual Assistant">
+      <p>Virtual Assistant - A virtual assistant is a smart helper that performs tasks and answers questions through voice or text.</p>
+    </div>
+  </div>
+</div>
+<a class="backtohome" href="STUDENTPORTAL.html"> Return → </a>
+
+</main>
+<footer>
+        <p>© TVL-ICT Students</p>
+        <p><a href="STUDENTPORTALPRIVACYPOLICY.html"> Privacy Policy </a> |  <a href="STUDENTPORTALCONTACTS.html"> Send Feedback </a></p>
+    </footer>
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const titleContainers = document.querySelectorAll('.strand-title-container');
+
+    titleContainers.forEach(container => {
+      const strandBox = container.closest('.strand-box');
+      const careerList = strandBox ? strandBox.querySelector('.career-list') : null;
+
+      if (careerList) {
+        
+        container.addEventListener('click', () => {
+          careerList.classList.toggle('active');
+        });
+      }
+    });
+  });
+</script>
+
+</body>
+</html>

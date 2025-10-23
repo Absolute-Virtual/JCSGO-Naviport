@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Market and Industry Trends | Student Portal</title>
+<link rel="stylesheet" type="text/css" href="STUDENTPORTAL.css">
+
+<style>
+body {
+  font-family: Arial, sans-serif;
+  background-color: #020E4C;
+  color: white;
+  margin: 0;
+  padding: 0;
+  background-image: url(BACKGROUND.PNG);
+  background-size: cover;
+  background-position: center;
+}
+
+main {
+  padding-top: 120px;
+  padding-bottom: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1.page-title {
+  color: #FFB11A;
+  font-size: 80px;
+  font-family: Romanica, serif;
+  margin-bottom: 40px;
+  border-bottom: 3px solid #FFB11A;
+  animation: peekaboo 1.5s;
+}
+
+.trend-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 30px;
+  width: 90%;
+  max-width: 1200px;
+}
+
+.trend-card {
+  background-color: #0f2b73;
+  border-radius: 15px;
+  border: 3px solid #FFB11A;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.4);
+  padding: 25px;
+  transition: transform 0.3s, box-shadow 0.3s;
+  animation: peekaboo-shotup 1.2s;
+}
+
+.trend-card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 0 20px #FFB11A;
+}
+
+.trend-title {
+  font-size: 26px;
+  color: #FFB11A;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.trend-info {
+  font-size: 15px;
+  color: white;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+.trend-img {
+  width: 100%;
+  border-radius: 10px;
+  border: 2px solid #FFB11A;
+  object-fit: cover;
+  margin-bottom: 15px;
+  max-height: 280px;
+}
+
+@keyframes peekaboo {
+  0% {opacity: 0; transform: translateY(-10px);}
+  100% {opacity: 1;}
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <nav>
+    <a href="STUDENTPORTALLOGIN.html" class="hasnot" style="margin: 10px;">Log In</a>
+    <a href="STUDENTPORTALSIGNUP.html" class="hasnot" style="margin: 10px 750px 10px 10px;">Sign Up</a>
+  </nav>
+  <nav>
+    <a href="STUDENTPORTAL.html" class="categ">HOME</a>
+    <a href="STUDENTPORTALCONTACTS.html" class="categ">CONTACTS</a>
+    <a href="#" class="categ">ABOUT US</a>
+  </nav>
+</header>
+
+<main>
+  <center>
+  <h1 class="page-title">Market and Industry Trends</h1>
+
+  <div class="trend-grid">
+
+    <div class="trend-card">
+      <img src="techtrend.jpg" alt="Tech Industry" class="trend-img">
+      <div class="trend-title">Technology and Innovation</div>
+      <p class="trend-info">The demand for digital skills continues to grow in the Philippines. Careers in AI, cybersecurity, web development, and data analytics are rising as industries undergo digital transformation.</p>
+    </div>
+
+    <div class="trend-card">
+      <img src="healthtrend.jpg" alt="Healthcare Industry" class="trend-img">
+      <div class="trend-title">Healthcare and Life Sciences</div>
+      <p class="trend-info">Healthcare remains one of the fastest-growing sectors. Opportunities in nursing, medical technology, and pharmaceuticals expand due to an aging population and global health awareness.</p>
+    </div>
+
+    <div class="trend-card">
+      <img src="fintech.jpg" alt="Finance and Business" class="trend-img">
+      <div class="trend-title">Finance and FinTech</div>
+      <p class="trend-info">Digital banking and mobile finance solutions are shaping the future. Financial analysts, accountants, and digital marketers are in high demand in the Philippine business landscape.</p>
+    </div>
+
+    <div class="trend-card">
+      <img src="bpo.jpg" alt="BPO and Remote Work" class="trend-img">
+      <div class="trend-title">BPO and Remote Work</div>
+      <p class="trend-info">The BPO industry remains a cornerstone of the Philippine economy. Virtual assistance, IT support, and customer service roles are adapting to hybrid and remote setups.</p>
+    </div>
+
+    <div class="trend-card">
+      <img src="green.jpg" alt="Sustainability and Environment" class="trend-img">
+      <div class="trend-title">Sustainability and Green Jobs</div>
+      <p class="trend-info">Environmental awareness has led to the rise of green industries. Careers in environmental science, renewable energy, and sustainable agriculture are expanding rapidly.</p>
+    </div>
+
+    <div class="trend-card">
+      <img src="creative.jpg" alt="Creative Industries" class="trend-img">
+      <div class="trend-title">Creative and Media Industries</div>
+      <p class="trend-info">Filmmaking, animation, and content creation thrive in the digital age. The creative economy provides opportunities for artists, designers, and storytellers worldwide.</p>
+    </div>
+
+    <div class="trend-card">
+      <img src="education.jpg" alt="Education and Training" class="trend-img">
+      <div class="trend-title">Education and Digital Learning</div>
+      <p class="trend-info">With e-learning and online courses gaining traction, educators and instructional designers are using technology to shape the next generation of learners.</p>
+    </div>
+
+    <div class="trend-card">
+      <img src="tvltrend.jpg" alt="Technical and Vocational" class="trend-img">
+      <div class="trend-title">Technical and Vocational Skills</div>
+      <p class="trend-info">Skilled trades such as welding, automotive technology, and culinary arts remain vital. TESDA programs continue to empower Filipino workers for global competitiveness.</p>
+    </div>
+
+  </div>
+</center>
+<a class="backtohome" href="STUDENTPORTAL.html"> Return → </a>
+</main>
+<footer>
+        <p>© TVL-ICT Students</p>
+        <p><a href="STUDENTPORTALPRIVACYPOLICY.html"> Privacy Policy </a> |  <a href="STUDENTPORTALCONTACTS.html"> Send Feedback </a></p>
+    </footer>
+</body>
+</html>

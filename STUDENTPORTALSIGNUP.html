@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Sign-Up | Naviport</title>
+	<link rel="stylesheet" type="text/css" href="STUDENTPORTAL.css">
+</head>
+<script src="STUDENTPORTAL.js"></script>
+<body>
+
+	<header>
+		<nav>
+			<a href="STUDENTPORTALLOGIN.html" class="hasnot" id="login" style="margin: 10px;">Log In</a>
+			<a href="STUDENTPORTALSIGNUP.html" class="selected" id="signup" style="margin: 10px 750px 10px 10px;">Sign Up</a>
+		</nav>
+		<nav>
+			<a href="STUDENTPORTAL.html" class="categ" id="home">HOME</a>
+			<a href="STUDENTPORTALCONTACTS.html" class="categ" id="contacts">CONTACTS</a>
+			<a href="STUDENTPORTALABOUTUS.html" class="categ" id="aboutus">ABOUT US</a>
+		</nav>
+
+	</header>
+
+	<main style="margin: 0; display: flex; justify-content: center; align-items: center; min-height: 150vh;">
+		<div class="signup-container">
+			<div class="signup-box">
+				<h2>SIGN-UP</h2>
+				<h4>To get started, please fill out the information.</h4>
+				<form action="#" method="POST">
+
+					<input type="text" id="fname" name="fname" required placeholder="First name">
+					<input type="text" id="lname" name="lname" required placeholder="Last name">
+					<br>
+					<input type="text" id="eusername" name="eusername" required placeholder="Enter a Username">
+					<input type="password" id="epassword" name="epassword" required placeholder="Enter a Password">
+
+					<div class="tos-pp">
+						
+						<label for="remember" class="tos-container">I agree to the <a href="STUDENTPORTALTERMSOFSERVICE.html" class="tos">Terms of Service</a></label><input type="checkbox" id="tos" name="tos">
+						<label for="remember" class="pp-container">I agree to <a href="STUDENTPORTALPRIVACYPOLICY.html" class="pp">Privacy Policy</a></label><input type="checkbox" id="pp" name="pp">
+					    <button class="signupbutton" type="submit">Sign up</button>
+
+					</div>
+				</form>
+		    </div>
+		</div>
+	</main>
+	<footer>
+		<p>© TVL-ICT Students</p>
+		<p><a href="STUDENTPORTALPRIVACYPOLICY.html"> Privacy Policy </a> |  <a href="STUDENTPORTALCONTACTS.html"> Send Feedback </a></p>
+	</footer>
+
+	
+</body>
+</html>
